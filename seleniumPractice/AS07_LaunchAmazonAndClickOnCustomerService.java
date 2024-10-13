@@ -6,8 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 //Assignment7: WAP launch Amazon.in and click on Customer service with help of  PartialLinkText locator
 
-
-public class AS07_LoginToAmazonAndClickOnCustomerService 
+public class AS07_LaunchAmazonAndClickOnCustomerService 
 {
 
 	public static void main(String[] args) 

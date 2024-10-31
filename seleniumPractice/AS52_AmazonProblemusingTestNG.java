@@ -40,8 +40,8 @@ public class AS52_AmazonProblemusingTestNG {
 
 	@Test
 	public void AddToWishlist() throws InterruptedException {
-		
-		searchProduct();		
+
+		searchProduct();
 
 		// click 1st shoe
 		WebElement e2 = driver.findElement(By.xpath("//a[@class='a-link-normal s-no-outline']"));

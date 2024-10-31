@@ -11,31 +11,26 @@ import org.testng.annotations.Test;
 				@AfterMethod
 */
 
-public class AS49_BeforeMethod_Test1_Test2_AfterMethod 
-{
-	@BeforeMethod 
-	public void bm()
-	{
+public class AS49_BeforeMethod_Test1_Test2_AfterMethod {
+	@BeforeMethod
+	public void bm() {
 		System.out.println("@BeforeMethod");
 	}
-	
-	@Test 
-	public void test1()
-	{
+
+	@Test
+	public void test1() {
 		System.out.println("@Test1 method");
 	}
-	
-	@Test 
-	public void test2()
-	{
+
+	@Test
+	public void test2() {
 		System.out.println("@Test2 method");
 	}
-	
-	@AfterMethod 
-	public void am()
-	{
+
+	@AfterMethod
+	public void am() {
 		System.out.println("@AfterMethod");
 		System.out.println();
-	}	
-	
+	}
+
 }

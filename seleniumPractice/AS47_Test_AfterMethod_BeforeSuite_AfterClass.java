@@ -12,30 +12,25 @@ import org.testng.annotations.Test;
 				@AfterClass
 */
 
-public class AS47_Test_AfterMethod_BeforeSuite_AfterClass 
-{
-	
-	@Test 
-	public void test()
-	{
+public class AS47_Test_AfterMethod_BeforeSuite_AfterClass {
+
+	@Test
+	public void test() {
 		System.out.println("@Test method");
 	}
-	
-	@AfterMethod 
-	public void am()
-	{
+
+	@AfterMethod
+	public void am() {
 		System.out.println("@AfterMethod");
 	}
-	
+
 	@BeforeSuite
-	public void bs()
-	{
+	public void bs() {
 		System.out.println("@BeforeSuite");
 	}
-	
-	@AfterClass 
-	public void ac()
-	{
+
+	@AfterClass
+	public void ac() {
 		System.out.println("@AfterClass ");
 	}
 

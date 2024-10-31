@@ -1,6 +1,7 @@
 package seleniumAssignments;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,6 +15,7 @@ public class AS02_TypeIndiaOnGoogleSearchBar {
 		driver.get("https://www.google.in/");
 		WebElement searchTextBox = driver.findElement(By.name("q"));
 		searchTextBox.sendKeys("India");
+		searchTextBox.sendKeys(Keys.ENTER);
 		
 		driver.quit();
 		

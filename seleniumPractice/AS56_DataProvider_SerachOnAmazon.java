@@ -15,7 +15,8 @@ public class AS56_DataProvider_SerachOnAmazon {
 	@DataProvider(name = "set1")
 	public Object[][] dataProviderMethod() {
 
-		return new Object[][] { { "Shoes" }, { "Mobile" }, { "TV" },{ "laptop" }, { "watch" },{ "toys" },{ "Refrigerators" },{ "Washing machine" },{ "Beds" },{ "sandles" }};
+		return new Object[][] { { "Shoes" }, { "Mobile" }, { "TV" }, { "laptop" }, { "watch" }, { "toys" },
+				{ "Refrigerators" }, { "Washing machine" }, { "Beds" }, { "sandles" } };
 	}
 
 	@Test(dataProvider = "set1")
@@ -23,7 +24,7 @@ public class AS56_DataProvider_SerachOnAmazon {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in");
-		
+
 		// type on amazon search bar
 		WebElement e1 = driver.findElement(By.id("twotabsearchtextbox"));
 		e1.sendKeys(inputs + Keys.ENTER);

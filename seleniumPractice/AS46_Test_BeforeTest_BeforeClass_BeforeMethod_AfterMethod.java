@@ -3,7 +3,6 @@ package testNgAssignmens;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -41,22 +40,21 @@ public class AS46_Test_BeforeTest_BeforeClass_BeforeMethod_AfterMethod {
 	}
 
 	@BeforeMethod
-	public void checksuccessfulLogin() 
-	{
+	public void checksuccessfulLogin() {
 		WebElement productTest = driver.findElement(By.xpath("//span[.='Products']"));
-		boolean status= productTest.isDisplayed();
-		
-		if (status) {			
+		boolean status = productTest.isDisplayed();
+
+		if (status) {
 			System.out.println("Login SuccessFul");
-		}else {
+		} else {
 			System.out.println("Login Failed");
 		}
 	}
 
 	@Test
-	public void printFotterDetailsofswagLabsPage() throws InterruptedException {	
-		
-		//print Fotter Details of swagLabs Page
+	public void printFotterDetailsofswagLabsPage() throws InterruptedException {
+
+		// print Fotter Details of swagLabs Page
 		WebElement footer = driver.findElement(By.className("footer_copy"));
 		Thread.sleep(2000);
 		String footerDetails = footer.getText();
@@ -66,10 +64,9 @@ public class AS46_Test_BeforeTest_BeforeClass_BeforeMethod_AfterMethod {
 	}
 
 	@AfterMethod
-	public void logot() throws InterruptedException 
-	{
+	public void logot() throws InterruptedException {
 		System.out.println("Test passed");
 		driver.close();
 	}
-	
+
 }

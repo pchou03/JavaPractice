@@ -41,6 +41,7 @@ public class AS03_LoginToAmazonFacebookFlipkart
 		WebElement continuebutton =driver.findElement(By.id("continue"));
 		continuebutton.click();
 		Thread.sleep(10000);
+		
 	}
 	
 	public static void flipcartLogin() throws InterruptedException

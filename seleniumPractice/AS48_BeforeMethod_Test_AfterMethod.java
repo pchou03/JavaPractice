@@ -10,24 +10,20 @@ import org.testng.annotations.Test;
 				@AfterMethod
 */
 
-public class AS48_BeforeMethod_Test_AfterMethod 
-{
+public class AS48_BeforeMethod_Test_AfterMethod {
 
-	@BeforeMethod 
-	public void bm()
-	{
+	@BeforeMethod
+	public void bm() {
 		System.out.println("@BeforeMethod");
 	}
-	
-	@Test 
-	public void test()
-	{
+
+	@Test
+	public void test() {
 		System.out.println("@Test method");
 	}
-	
-	@AfterMethod 
-	public void am()
-	{
+
+	@AfterMethod
+	public void am() {
 		System.out.println("@AfterMethod");
 	}
 }

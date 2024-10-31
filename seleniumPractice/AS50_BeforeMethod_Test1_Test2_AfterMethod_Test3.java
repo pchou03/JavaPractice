@@ -12,38 +12,32 @@ import org.testng.annotations.Test;
 				@Test3
 */
 
-public class AS50_BeforeMethod_Test1_Test2_AfterMethod_Test3 
-{
+public class AS50_BeforeMethod_Test1_Test2_AfterMethod_Test3 {
 
-	@BeforeMethod 
-	public void bm()
-	{
+	@BeforeMethod
+	public void bm() {
 		System.out.println("@BeforeMethod");
 	}
-	
-	@Test 
-	public void test1()
-	{
+
+	@Test
+	public void test1() {
 		System.out.println("@Test1 method");
 	}
-	
-	@Test 
-	public void test2()
-	{
+
+	@Test
+	public void test2() {
 		System.out.println("@Test2 method");
 	}
-	
-	@AfterMethod 
-	public void am()
-	{
+
+	@AfterMethod
+	public void am() {
 		System.out.println("@AfterMethod");
 		System.out.println();
 	}
-	
-	@Test 
-	public void test3()
-	{
+
+	@Test
+	public void test3() {
 		System.out.println("@Test3 method");
 	}
-	
+
 }

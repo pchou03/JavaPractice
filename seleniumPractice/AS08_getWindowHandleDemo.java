@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+//Assignment8: WAP for getWindowhandle()
+
 public class AS08_getWindowHandleDemo {
 
 	public static void main(String[] args) {

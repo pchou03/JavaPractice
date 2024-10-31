@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-
 //Assignment 54: WAP (Skeleton program) to do registration using below fields
 //				FirstName, LastName, DOB, Gender, EmailID
 
@@ -14,7 +13,7 @@ public class AS54_DataProvider_registration_SkeletonProgram {
 
 	@DataProvider(name = "set1")
 	public Object[][] registrationData() {
-		
+
 		Object[][] data1 = new Object[10][5];
 		// row1
 		data1[0][0] = "Prashant";
@@ -22,35 +21,35 @@ public class AS54_DataProvider_registration_SkeletonProgram {
 		data1[0][2] = "20/03/1996";
 		data1[0][3] = "Male";
 		data1[0][4] = "Prashant@gmail.com";
-		
+
 		// row2
 		data1[1][0] = "kalyani";
 		data1[1][1] = "Chougale";
 		data1[1][2] = "26/03/1996";
 		data1[1][3] = "Female";
 		data1[1][4] = "kalyani@gmail.com";
-		
+
 		// row3
 		data1[2][0] = "Saaisha";
 		data1[2][1] = "Chougale";
 		data1[2][2] = "07/07/2023";
 		data1[2][3] = "Female";
 		data1[2][4] = "Saaisha@gmail.com";
-		
+
 		// row4
 		data1[3][0] = "Pandurang";
 		data1[3][1] = "Chougale";
 		data1[3][2] = "05/10/1973";
 		data1[3][3] = "Male";
-		data1[3][4] = "Pandurang@gmail.com";		
-		
+		data1[3][4] = "Pandurang@gmail.com";
+
 		// row5
 		data1[4][0] = "Surekha";
 		data1[4][1] = "Chougale";
 		data1[4][2] = "05/10/1980";
 		data1[4][3] = "Male";
 		data1[4][4] = "Surekha@gmail.com";
-		
+
 		// row6
 		data1[5][0] = "Amit";
 		data1[5][1] = "Patil";
@@ -91,8 +90,7 @@ public class AS54_DataProvider_registration_SkeletonProgram {
 	}
 
 	@Test(dataProvider = "set1")
-	public void registrationProcess(String fname, String lname, String DOB, String sex, String email) 
-	{
+	public void registrationProcess(String fname, String lname, String DOB, String sex, String email) {
 		System.out.println(fname);
 		System.out.println(lname);
 		System.out.println(DOB);

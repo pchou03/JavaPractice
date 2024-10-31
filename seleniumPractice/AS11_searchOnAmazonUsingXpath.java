@@ -9,15 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AS11_searchOnAmazonUsingXpath {
 
-	public static void main(String[] args) throws InterruptedException 
-	{			
-			ChromeDriver driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.get("https://www.amazon.in/");
-			WebElement searchTextBox = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
-			searchTextBox.sendKeys("mobile" + Keys.ENTER);
-			Thread.sleep(5000);
-			driver.quit();			
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		WebElement searchTextBox = driver.findElement(By.xpath("(//input)[5]"));
+		// imp: use parenthesis while using indexing otherwise xpath will not work in
+		// future
+		searchTextBox.sendKeys("mobile" + Keys.ENTER);
+		Thread.sleep(5000);
+		driver.quit();
 	}
 
 }
+

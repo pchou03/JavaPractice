@@ -9,25 +9,21 @@ import org.testng.annotations.Test;
 				@Test2
 */
 
-public class AS51_BeforeMethod_Test1_Test2 
-{
+public class AS51_BeforeMethod_Test1_Test2 {
 
-	@BeforeMethod 
-	public void bm()
-	{
+	@BeforeMethod
+	public void bm() {
 		System.out.println("@BeforeMethod");
 	}
-	
-	@Test 
-	public void test1()
-	{
+
+	@Test
+	public void test1() {
 		System.out.println("@Test1 method \n");
 	}
-	
-	@Test 
-	public void test2()
-	{
+
+	@Test
+	public void test2() {
 		System.out.println("@Test2 method\n");
-	}	
-	
+	}
+
 }

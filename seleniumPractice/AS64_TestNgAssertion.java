@@ -10,9 +10,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-//
+//Assignment 64: WAP for Launch amazon, search for shoe and verify whether test is pass/fai
 
-public class AS64_assertion {
+public class AS64_TestNgAssertion {
 
 	WebDriver driver;
 

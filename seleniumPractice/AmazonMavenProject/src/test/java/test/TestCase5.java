@@ -1,6 +1,6 @@
 package test;
 
-import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import source.CartPage;
@@ -8,9 +8,11 @@ import source.HomePage;
 import source.Loginpage;
 import source.ProductPage;
 
+
+@Listeners(source.ListenerPro.class)
 public class TestCase5 extends LaunchQuit{
 	
-	@Test
+	@Test(retryAnalyzer = source.RetryClass.class)
 	public void remove_fromcart_fromWishList_logout() throws InterruptedException {
 		HomePage h1 = new HomePage(driver);
 		h1.accountAndListHoverOver(driver);
@@ -22,7 +24,7 @@ public class TestCase5 extends LaunchQuit{
 		l1.pwd();
 		l1.pwd_signin();
 
-		// serach product
+		// search product
 		h1.searching();
 
 		// add to wishList

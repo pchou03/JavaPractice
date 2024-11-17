@@ -1,15 +1,17 @@
 package test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import source.HomePage;
 import source.Loginpage;
 import source.ProductPage;
 
+@Listeners(source.ListenerPro.class)
 public class TestCase4 extends LaunchQuit {
 
-	@Test
+	@Test(retryAnalyzer = source.RetryClass.class)
 	public void login_Serach_WishList_Cart_Logout() throws InterruptedException {
 		HomePage h1 = new HomePage(driver);
 		h1.accountAndListHoverOver(driver);

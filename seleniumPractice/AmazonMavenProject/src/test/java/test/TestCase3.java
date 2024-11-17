@@ -1,14 +1,16 @@
 package test;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import source.HomePage;
 import source.Loginpage;
 import source.ProductPage;
 
+@Listeners(source.ListenerPro.class)
 public class TestCase3 extends LaunchQuit {
 
-	@Test
+	@Test(retryAnalyzer = source.RetryClass.class)
 	public void login_Serach_WishList_LogoutFrom_amazon() {
 		HomePage h1 = new HomePage(driver);
 		h1.accountAndListHoverOver(driver);

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TestCase4">
+      <class name="test.TestCase2">
         <methods>
-          <include name="login_Serach_WishList_Cart_Logout"/>
+          <include name="loginSerachLogoutFromamazon"/>
           <include name="launch"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- test.TestCase4 -->
+      </class> <!-- test.TestCase2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

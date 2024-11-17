@@ -1,13 +1,15 @@
 package test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import source.HomePage;
 import source.Loginpage;
 
+@Listeners(source.ListenerPro.class)
 public class TestCase2 extends LaunchQuit {
 
-	@Test
+	@Test(retryAnalyzer = source.RetryClass.class)
 	public void loginSerachLogoutFromamazon() 
 	{
 		//navigate to signin option on homepage
